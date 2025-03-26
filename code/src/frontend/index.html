@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Classifier</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Email Classifier</h1>
+        <form id="emailContentForm">
+            <label for="emailContent">Upload Email Docs:</label>
+            <div id="fileInputs">
+                <!-- File inputs will be dynamically added here -->
+                <div class="file-input-container">
+                    <input type="file" name="emailFiles[]" accept=".txt,.pdf,.docx,.html" required>
+                    <span class="add-file-btn" onclick="addFileInput()">+</span>
+                </div>
+            </div>
+
+            <label for="emailContent">Upload Attachments:</label>
+            <div id="fileInputs">
+                <!-- File inputs will be dynamically added here -->
+                <div class="file-input-container">
+                    <input type="file" name="emailFiles[]" accept=".txt,.pdf,.docx,.html" required>
+                    <span class="add-file-btn" onclick="addFileInput()">+</span>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Analyze</button>
+        </form>
+        <div id="responseMessage"></div> <!-- To display the analysis result -->
+    </div>
+
+    <script src="app.js"></script> <!-- Link to external JS -->
+</body>
+
+</html>
