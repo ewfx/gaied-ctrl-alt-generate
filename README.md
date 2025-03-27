@@ -110,7 +110,7 @@ During the development of our GenAI-powered Email Classification, our team encou
    ```
 2. Install dependencies  
    ```sh
-   pip install -r code/src/backend/requirements.txt (for Python)
+   pip install -r code/src/backend/requirements.txt
    ```
 3. Start the server
    ```sh
