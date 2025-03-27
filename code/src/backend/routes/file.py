@@ -4,8 +4,8 @@ from controllers.file_handler import handle_mail_upload, handle_mail_upload_with
 
 router = APIRouter()
 
-@router.post("/uploadfile/", description="Upload a single file")
-def create_upload_file(mail_file: Annotated[UploadFile, File(description="The file to upload")]):
+@router.post("/singlemail/", description="Upload a single file")
+def upload_mail(mail_file: Annotated[UploadFile, File(description="The file to upload")]):
     """
     Upload a single email
     """
@@ -17,8 +17,8 @@ def create_upload_file(mail_file: Annotated[UploadFile, File(description="The fi
         raise HTTPException(status_code=500, detail=f"Unexpected error: {e}")
     return response
 
-@router.post("/uploadfiles/", description="Upload multiple files")
-def create_upload_files(mails: Annotated[list[UploadFile], File(description="Upload one or more Mails as .eml or .msg")], attachments: Annotated[list[UploadFile], File(description="Upload one or more Attachments of format .docx or .pdf")]):
+@router.post("/mailwithattachments/", description="Upload multiple files")
+def upload_mail_with_attachments(mails: Annotated[list[UploadFile], File(description="Upload one or more Mails as .eml or .msg")], attachments: Annotated[list[UploadFile], File(description="Upload one or more Attachments of format .docx or .pdf")]):
     """
     Upload email and attachments
     """

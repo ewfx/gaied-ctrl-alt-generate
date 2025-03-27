@@ -1,3 +1,4 @@
+from email import message
 from fastapi import UploadFile, HTTPException
 from modules.text_extractor import extract_msg_from_file
 from modules import llm_client  # Import the initialized LLM client
@@ -16,11 +17,12 @@ def handle_mail_upload(mail_file: UploadFile) -> dict[str, str]:
         HTTPException: If an error occurs during file processing.
     """
     try:
-        file_body = extract_msg_from_file(mail_file)
+        message = extract_msg_from_file(mail_file)
+        response = llm_client.classify_email_and_extract_details(message)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error processing mail file: {e}")
 
-    return {"content": file_body}
+    return {"response": response}
 
 def handle_mail_upload_with_attachments(mails: list[UploadFile], attachments: list[UploadFile]) -> dict[str, dict]:
     """
