@@ -22,6 +22,7 @@ This solution will streamline operations, minimize errors, and enhance productiv
 
 ## 🎥 Demo 
 📹 [Video Demo](/code/test/ewfx_gaied-ctrl-alt-generate%20-%20demo%20video.mp4)  
+👥 [Presentation](/code/test/ctrl-alt-generate_presentation.pdf)
 
 🖼️ Screenshots:
 ![result 1](/code/test/test_results/result_1.png)
