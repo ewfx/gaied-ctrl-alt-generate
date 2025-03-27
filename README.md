@@ -20,9 +20,8 @@ To address this challenge, our project leverages **Generative AI** to develop an
 
 This solution will streamline operations, minimize errors, and enhance productivity, enabling lending service teams to focus on higher-value tasks rather than manual triage. 🚀
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+## 🎥 Demo 
+📹 [Video Demo](#)  
 🖼️ Screenshots:
 
 ![Screenshot 1](link-to-image)
@@ -110,6 +109,11 @@ During the development of our GenAI-powered Email Classification, our team encou
 2. Install dependencies  
    ```sh
    pip install -r code/src/backend/requirements.txt (for Python)
+   ```
+3. Start the server
+   ```sh
+   cd code/src/backend
+   uvicorn main:app --reload
    ```
 
 ## 🏗️ Tech Stack
