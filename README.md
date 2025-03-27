@@ -117,8 +117,8 @@ During the development of our GenAI-powered Email Classification, our team encou
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Backend: Python (FastAPI)
-- 🔹 GenAI/ NLP: Gemini API
+- Backend: Python (FastAPI)
+- GenAI/ NLP: Gemini API
 
 ## 👥 Team
 - **Ahana Vishwakarma** - [GitHub](https://github.com/ahanavish) | [LinkedIn](https://www.linkedin.com/in/ahanavish/)
