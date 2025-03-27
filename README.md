@@ -21,10 +21,12 @@ To address this challenge, our project leverages **Generative AI** to develop an
 This solution will streamline operations, minimize errors, and enhance productivity, enabling lending service teams to focus on higher-value tasks rather than manual triage. 🚀
 
 ## 🎥 Demo 
-📹 [Video Demo](#)  
-🖼️ Screenshots:
+📹 [Video Demo](/code/test/ewfx_gaied-ctrl-alt-generate%20-%20demo%20video.mp4)  
 
-![Screenshot 1](link-to-image)
+🖼️ Screenshots:
+![result 1](/code/test/test_results/result_1.png)
+![result_2](/code/test/test_results/result_2.png)
+![result_3](/code/test/test_results/result_3.png)
 
 ## 💡 Inspiration
 The inspiration for this project came from the challenges faced by Commercial Bank Lending Service teams, who deal with an overwhelming number of email requests daily. These emails often include attachments and require manual triage by "Gatekeepers" to classify, extract key information, and route service requests appropriately.
